@@ -7,8 +7,8 @@ locals {
   two_tgw_vpc_network_cidrs          = local.two_tgw.vpc.network_cidrs
   two_tgw_vpc_routes_route_table_ids = local.two_tgw.vpc.routes[*].route_table_id
 
-  three_tgw_vpc_network_cidrs          = local.three.tgw.vpc.network_cidrs
-  three_tgw_vpc_routes_route_table_ids = local.three.tgw.vpc_routes[*].route_table_id
+  three_tgw_vpc_network_cidrs          = local.three_tgw.vpc.network_cidrs
+  three_tgw_vpc_routes_route_table_ids = local.three_tgw.vpc.routes[*].route_table_id
 }
 
 ## vpc routes
