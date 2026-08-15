@@ -6,13 +6,13 @@ routing policy (deny > allow > segments > default) into cross-region VPC route
 table entries. Operates as the Global IR, evaluating policy across all regions
 in a single declaration.
 
-`v1.1.0`:
+`v2.0.0`:
 - Breaking change: cross-region VPC routes now use policy compilation instead of VPC aggregate setproduct.
 - Route resource names are consolidated and renamed.
 - New `routing_policy` variable with four primitives and fixed precedence: deny > allow > segments > default.
 - Dual-stack support: one policy declaration controls both IPv4 and IPv6 route generation.
 - Scope-invariant: same policy evaluation as Centralized Router and Super Router.
-- Uses `generate_routes_to_other_vpcs` v1.10.0 as the shared compilation unit.
+- Uses `generate_routes_to_other_vpcs` v1.1.0 as the shared compilation unit.
 
 `v1.0.1`:
 - reorganize files
