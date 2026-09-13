@@ -9,7 +9,7 @@ locals {
 
 module "this_generate_routes_to_other_vpcs" {
   source  = "JudeQuintana/generate-routes-to-other-vpcs/aws"
-  version = "1.2.1"
+  version = "1.2.2"
 
   generate_routes_to_other_vpcs = {
     routing_policy            = var.full_mesh_trio.routing_policy
